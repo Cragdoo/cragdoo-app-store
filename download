@@ -1,9 +1,0 @@
-node_modules/
-dist/
-build/
-*.db
-*.db-shm
-*.db-wal
-.env
-.env.local
-data/
