@@ -3,7 +3,7 @@ version: "3.8"
 services:
   backend:
     build: ./backend
-    container_name: cragdoo-app-counting-pennies-backend
+    container_name: counting-pennies-backend
     restart: unless-stopped
     environment:
       - NODE_ENV=production
@@ -16,7 +16,7 @@ services:
 
   frontend:
     build: ./frontend
-    container_name: cragdoo-app-counting-pennies-frontend
+    container_name: counting-pennies-frontend
     restart: unless-stopped
     ports:
       - "3000:80"
