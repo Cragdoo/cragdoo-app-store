@@ -14,7 +14,7 @@ description: >-
   budgets.
 developer: Self-hosted
 website: ""
-repo: https://github.com/cragdoo/cragdoo-app-store/counting-pennies
+repo: https://github.com/cragdoo/counting-pennies
 support: https://github.com/cragdoo/counting-pennies/issues
 gallery: []
 releaseNotes: "Initial release"
