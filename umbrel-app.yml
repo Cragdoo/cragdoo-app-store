@@ -1,0 +1,23 @@
+manifestVersion: 1
+id: counting-pennies
+name: Counting Pennies
+tagline: Personal finance tracker for expenses, income, investments & savings
+icon: https://raw.githubusercontent.com/cragdoo/counting-pennies/main/frontend/public/icon.png
+category: finance
+version: "1.0.0"
+port: 3000
+description: >-
+  Counting Pennies is a self-hosted personal finance dashboard that helps you
+  track monthly expenses (food, gas, electricity, broadband, subscriptions),
+  income, investment portfolio, and savings goals. Features dark/light mode,
+  pie charts, budget progress bars, and full customisation of categories and
+  budgets.
+developer: Self-hosted
+website: ""
+repo: https://github.com/cragdoo/counting-pennies
+support: https://github.com/cragdoo/counting-pennies/issues
+gallery: []
+releaseNotes: "Initial release"
+dependencies: []
+submitter: ""
+submission: ""
