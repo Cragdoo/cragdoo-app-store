@@ -1,14 +1,30 @@
-version: "3.7"
+version: "3.8"
 
 services:
-
-  app_proxy:
+  backend:
+    build: ./backend
+    container_name: counting-pennies-backend
+    restart: unless-stopped
     environment:
-      # The format here is: <app-id>_<docker-service-name>_1
-      APP_HOST: cragdoo-counting-pennies_server_1
-      APP_PORT: 3000
-    
-  server:
-    image: getumbrel/community-app-store-hello-world:latest
-    user: "1000:1000"
-    init: true
+      - NODE_ENV=production
+      - PORT=3001
+      - DB_PATH=/data/finance.db
+    volumes:
+      - ./data:/data
+    networks:
+      - internal
+
+  frontend:
+    build: ./frontend
+    container_name: counting-pennies-frontend
+    restart: unless-stopped
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    networks:
+      - internal
+
+networks:
+  internal:
+    driver: bridge
