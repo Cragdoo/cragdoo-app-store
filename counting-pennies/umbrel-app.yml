@@ -1,5 +1,5 @@
 manifestVersion: 1
-id: cragdoo-app-store-counting-pennies
+id: cragdoo-app-counting-pennies
 name: Counting Pennies
 tagline: Personal finance tracker for expenses, income, investments & savings
 icon: https://raw.githubusercontent.com/cragdoo/counting-pennies/main/frontend/public/icon.png
